@@ -1,0 +1,187 @@
+* {
+    all: unset;
+    display: revert;
+    box-sizing: border-box;
+}
+
+[default-styles] {
+    all: revert;
+}
+
+html {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: hsl(209, 33%, 12%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body {
+    text-align: center;
+    margin: 3rem 0;
+    width: 60%;
+}
+
+h1 {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: hsl(209, 33%, 12%);
+    margin-bottom: 1em;
+}
+
+h1 span {
+    color: hsl(223, 87%, 63%);
+}
+
+h2 {
+    font-size: 2em;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 0.5em;
+}
+
+h2 span {
+    font-weight: 600;
+    color: hsl(209, 33%, 12%);
+}
+
+form {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+form span {
+    width: 62.5%;
+}
+
+input {
+    color: hsl(209, 33%, 12%);
+    text-align: left;
+    border: 1px solid hsl(0, 0%, 59%);
+    border-radius: 5em;
+    padding: 1em 1.5em;
+    width: 100%;
+    transition: all 0.25s ease;
+}
+
+input::placeholder {
+    color: hsl(0, 0%, 59%);
+}
+
+input:focus {
+    border-color: hsl(209, 33%, 12%);
+    transition: all 0.25s ease;
+}
+
+button {
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: hsl(223, 87%, 63%);
+    padding: 1em 1.5em;
+    border-radius: 5em;
+    width: 32.5%;
+    box-shadow: 0 0.25em 1em hsl(223, 100%, 88%);
+    transition: all 0.25s ease;
+}
+
+button:hover {
+    background-color: hsl(223, 87%, 70%);
+    transition: all 0.25s ease;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+footer a {
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 50%;
+    padding: 10px;
+    color: hsl(223, 87%, 63%);
+    margin: 0.25em;
+    transition: all 0.25s ease;
+}
+
+footer a:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: #FFFFFF;
+    border-color: hsl(223, 87%, 63%);
+    transition: all 0.25s ease;
+}
+
+footer p {
+    margin-top: 2rem;
+    font-size: 0.75em;
+    color: hsl(0, 0%, 59%);
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+.errorEmail {
+    border-color: hsl(354, 100%, 66%);
+    transition: all 0.5s ease;
+}
+
+.errorEmail:focus {
+    border-color: hsl(354, 100%, 66%);
+}
+
+.errorMessage0 {
+    opacity: 0;
+    color: hsl(354, 100%, 66%);
+    font-size: 0.75em;
+    margin: 0.5em 2em;
+    position: absolute;
+}
+
+.errorMessage1 {
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+@media (max-width: 960px) {
+    body {
+        width: 65%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+    body {
+        width: 80%;
+    }
+    h1 {
+        margin-bottom: 3rem;
+    }
+    h2 {
+        font-size: 1.75em;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 0;
+    }
+    main {
+        margin-bottom: 3rem;
+    }
+    span {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    button {
+        width: 100%;
+    }
+    #errorDiv p {
+        position: relative;
+        text-align: left;
+    }
+}
